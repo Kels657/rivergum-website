@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import JobberForm from "@/components/JobberForm";
+import ElfsightReviews from "@/components/ElfsightReviews";
 import { suburbs } from "@/lib/serviceData";
 
 export const metadata: Metadata = {
@@ -89,24 +90,6 @@ const trustPoints = [
   {
     title: "Experienced Team",
     description: "Trained, professional cleaners with years of experience across the Eastern Suburbs.",
-  },
-];
-
-const testimonials = [
-  {
-    name: "Sarah M.",
-    suburb: "Bondi",
-    text: "Rivergum did an incredible job on our windows and gutters. The team was professional, punctual, and the results were spotless. Will absolutely book again.",
-  },
-  {
-    name: "James T.",
-    suburb: "Double Bay",
-    text: "We use Rivergum for our office building every month. Always reliable and thorough — our clients regularly comment on how clean the windows look.",
-  },
-  {
-    name: "Emily R.",
-    suburb: "Vaucluse",
-    text: "Had our solar panels and windows done together. The difference in our electricity bill is already noticeable. Brilliant service at a great price.",
   },
 ];
 
@@ -343,7 +326,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Testimonials ── */}
+      {/* ── Reviews ── */}
       <section className="py-24 px-6 bg-[#fafafa]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14">
@@ -357,31 +340,7 @@ export default function Home() {
               Don&apos;t just take our word for it.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div key={t.name} className="bg-white border border-gray-100 p-8 flex flex-col">
-                <div className="flex gap-0.5 mb-5" aria-label="5 out of 5 stars">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <svg aria-hidden="true" key={i} className="w-4 h-4 text-[#c9a35b]" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="font-serif font-light text-[#1b1b1b] text-lg leading-relaxed flex-1 mb-8 italic">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="flex items-center gap-3 pt-6 border-t border-gray-100">
-                  <div className="w-8 h-8 rounded-full bg-[#8da59b] flex items-center justify-center text-[#1b1b1b] font-sans font-semibold text-xs flex-shrink-0" aria-hidden="true">
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <p className="font-sans font-medium text-[#1b1b1b] text-sm">{t.name}</p>
-                    <p className="font-sans text-xs text-gray-400">{t.suburb}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ElfsightReviews />
         </div>
       </section>
 
