@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import QuoteForm from "@/components/QuoteForm";
 import { services, getService, suburbs } from "@/lib/serviceData";
 
@@ -126,6 +127,66 @@ export default async function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* ── Before & After ── */}
+      {service.images && service.images.length > 0 && (
+        <section className="py-20 px-6 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10">
+              <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
+                Our Work
+              </span>
+              <h2 className="font-serif font-light text-[#1b1b1b] text-3xl md:text-4xl mt-2">
+                Before &amp; After
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {service.images.map((img) => (
+                <div key={img.src} className="relative aspect-video overflow-hidden">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── Videos ── */}
+      {service.videos && service.videos.length > 0 && (
+        <section className="py-20 px-6 bg-[#fafafa]">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10">
+              <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
+                See Us In Action
+              </span>
+              <h2 className="font-serif font-light text-[#1b1b1b] text-3xl md:text-4xl mt-2">
+                Watch Us Work
+              </h2>
+            </div>
+            <div className={`grid grid-cols-1 ${service.videos.length > 1 ? "sm:grid-cols-2" : ""} gap-6`}>
+              {service.videos.map((src) => (
+                <video
+                  key={src}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  className="w-full aspect-video object-cover bg-black"
+                >
+                  <source src={src} type="video/mp4" />
+                </video>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── Suburbs ── */}
       <section className="py-20 px-6 bg-white">

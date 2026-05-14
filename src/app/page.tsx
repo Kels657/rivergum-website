@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import QuoteForm from "@/components/QuoteForm";
 import { suburbs } from "@/lib/serviceData";
@@ -109,60 +110,83 @@ const testimonials = [
   },
 ];
 
+const galleryImages = [
+  { src: "/images/before-after/Before%20and%20After%205.png", alt: "Before and after window cleaning in Sydney's Eastern Suburbs" },
+  { src: "/images/before-after/Before%20and%20After%206.png", alt: "Before and after exterior surface cleaning Eastern Suburbs" },
+  { src: "/images/before-after/Before%20and%20After%202.png", alt: "Before and after professional window cleaning result" },
+  { src: "/images/before-after/Before%20and%20After%201.png", alt: "Before and after residential window cleaning" },
+];
+
 export default function Home() {
   return (
     <main>
 
       {/* ── Hero ── */}
-      <section className="bg-[#fafafa] pt-28 pb-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-4 mb-10">
-            <span aria-hidden="true" className="block w-10 h-px bg-[#8da59b]" />
-            <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
-              Eastern Suburbs Sydney
-            </span>
-            <span aria-hidden="true" className="block w-10 h-px bg-[#8da59b]" />
-          </div>
-          <h1 className="font-serif font-light text-[#1b1b1b] text-5xl md:text-7xl leading-[1.08] mb-7">
-            Window &amp; Exterior<br />
-            Cleaning,{" "}
-            <span className="italic text-[#8da59b]">Done Properly.</span>
-          </h1>
-          <p className="font-sans text-gray-500 text-lg max-w-xl mx-auto mb-10 leading-relaxed font-light">
-            Professional, reliable, and fully insured. Trusted by homeowners and businesses
-            across Bondi, Vaucluse, Rose Bay and beyond.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="#contact"
-              className="bg-[#c9a35b] text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-[#b8923f] transition-colors tracking-wide"
-            >
-              Get a Free Quote
-            </a>
-            <a
-              href="#services"
-              className="border border-[#8da59b] text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-[#8da59b]/10 transition-colors tracking-wide"
-            >
-              Our Services
-            </a>
-          </div>
-          <div className="mt-16 flex items-center justify-center">
-            {[
-              { value: "500+", label: "Jobs Completed" },
-              { value: "5★", label: "Average Rating" },
-              { value: "100%", label: "Fully Insured" },
-            ].map((stat, i) => (
-              <div key={stat.label} className="flex items-center">
-                {i > 0 && <div aria-hidden="true" className="h-8 w-px bg-gray-200 mx-4 md:mx-12" />}
-                <div className="text-center">
-                  <div className="font-serif text-2xl font-light text-[#1b1b1b]">{stat.value}</div>
-                  <div className="font-sans text-xs text-gray-400 mt-0.5 uppercase tracking-widest">
-                    {stat.label}
+      <section className="bg-[#fafafa] overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 lg:min-h-[88vh]">
+
+          {/* Text column */}
+          <div className="flex flex-col justify-center pt-16 pb-10 lg:py-0 lg:pr-12">
+            <div className="flex items-center gap-4 mb-10">
+              <span aria-hidden="true" className="block w-10 h-px bg-[#8da59b]" />
+              <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
+                Eastern Suburbs Sydney
+              </span>
+            </div>
+            <h1 className="font-serif font-light text-[#1b1b1b] text-5xl md:text-6xl lg:text-7xl leading-[1.08] mb-7">
+              Window &amp; Exterior<br />
+              Cleaning,{" "}
+              <span className="italic text-[#8da59b]">Done Properly.</span>
+            </h1>
+            <p className="font-sans text-gray-500 text-lg max-w-md mb-10 leading-relaxed font-light">
+              Professional, reliable, and fully insured. Trusted by homeowners and businesses
+              across Bondi, Vaucluse, Rose Bay and beyond.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="#contact"
+                className="bg-[#c9a35b] text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-[#b8923f] transition-colors tracking-wide"
+              >
+                Get a Free Quote
+              </a>
+              <a
+                href="#services"
+                className="border border-[#8da59b] text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-[#8da59b]/10 transition-colors tracking-wide"
+              >
+                Our Services
+              </a>
+            </div>
+            <div className="mt-14 flex items-center">
+              {[
+                { value: "500+", label: "Jobs Completed" },
+                { value: "5★", label: "Average Rating" },
+                { value: "100%", label: "Fully Insured" },
+              ].map((stat, i) => (
+                <div key={stat.label} className="flex items-center">
+                  {i > 0 && <div aria-hidden="true" className="h-8 w-px bg-gray-200 mx-4 md:mx-8" />}
+                  <div>
+                    <div className="font-serif text-2xl font-light text-[#1b1b1b]">{stat.value}</div>
+                    <div className="font-sans text-xs text-gray-400 mt-0.5 uppercase tracking-widest">
+                      {stat.label}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+
+          {/* Image column */}
+          <div className="relative h-72 sm:h-96 lg:h-auto">
+            <Image
+              src="/images/videos/Water%20Fed%20Clean%20External%20-%20long.jpg"
+              alt="Rivergum Services technician using a water-fed pole to clean windows on a Sydney Eastern Suburbs property"
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+
         </div>
       </section>
 
@@ -296,6 +320,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Video Banner ── */}
+      <section className="relative overflow-hidden h-72 sm:h-80 md:h-[420px]">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/images/videos/Video%20-%20Satisfying%20Clean%20%28music%29.mp4" type="video/mp4" />
+        </video>
+        <div aria-hidden="true" className="absolute inset-0 bg-[#1b1b1b]/60" />
+        <div className="relative z-10 h-full flex items-center justify-center px-6 text-center">
+          <div>
+            <span aria-hidden="true" className="block w-8 h-px bg-[#c9a35b] mx-auto mb-6" />
+            <h2 className="font-serif font-light text-white text-3xl md:text-5xl leading-tight max-w-2xl">
+              Trusted by homeowners across Sydney&apos;s Eastern Suburbs
+            </h2>
+          </div>
+        </div>
+      </section>
+
       {/* ── Testimonials ── */}
       <section className="py-24 px-6 bg-[#fafafa]">
         <div className="max-w-6xl mx-auto">
@@ -332,6 +379,36 @@ export default function Home() {
                     <p className="font-sans text-xs text-gray-400">{t.suburb}</p>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Our Work Gallery ── */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
+              Our Work
+            </span>
+            <h2 className="font-serif font-light text-[#1b1b1b] text-4xl md:text-5xl mt-2 mb-3">
+              Before &amp; After
+            </h2>
+            <p className="font-sans text-gray-500 text-base max-w-md font-light leading-relaxed">
+              See the difference a professional clean makes.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {galleryImages.map((img) => (
+              <div key={img.src} className="relative aspect-video overflow-hidden">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
               </div>
             ))}
           </div>

@@ -14,6 +14,8 @@ export type ServiceData = {
     name: string;
     suburb: string;
   };
+  images?: { src: string; alt: string }[];
+  videos?: string[];
 };
 
 export const services: ServiceData[] = [
@@ -45,6 +47,13 @@ export const services: ServiceData[] = [
       name: "Sarah M.",
       suburb: "Bondi",
     },
+    images: [
+      { src: "/images/before-after/Before%20and%20After%201.png", alt: "Before and after residential window cleaning in Sydney's Eastern Suburbs" },
+      { src: "/images/before-after/Before%20and%20After%203.png", alt: "Before and after window cleaning on an Eastern Suburbs home" },
+      { src: "/images/before-after/Before%20and%20After%20Window%20Sill%20%282%29.png", alt: "Before and after window sill cleaning" },
+      { src: "/images/before-after/Before%20and%20After%20Shutters%20%282%29.png", alt: "Before and after shutter cleaning" },
+    ],
+    videos: ["/images/videos/Video%20-%20man%20at%20work%20video.mp4"],
   },
   {
     slug: "commercial-window-cleaning",
@@ -76,6 +85,14 @@ export const services: ServiceData[] = [
       name: "James T.",
       suburb: "Double Bay",
     },
+    images: [
+      { src: "/images/before-after/Before%20and%20After%202.png", alt: "Before and after commercial window cleaning in Sydney" },
+    ],
+    videos: [
+      "/images/videos/Video%20-%20Time%20Laps%20office.mp4",
+      "/images/videos/Video%20Office%20Clean%20Video%20-%20Normal%20speed.mp4",
+      "/images/videos/Video%20-%20Water%20fed%20pole%20commercial.mp4",
+    ],
   },
   {
     slug: "solar-panel-cleaning",
@@ -106,6 +123,7 @@ export const services: ServiceData[] = [
       name: "Emily R.",
       suburb: "Vaucluse",
     },
+    videos: ["/images/videos/Video%20-Water%20fed%20-%20Solar%20panel%20cleaning.mp4"],
   },
   {
     slug: "gutter-cleaning",
@@ -135,6 +153,9 @@ export const services: ServiceData[] = [
       name: "David W.",
       suburb: "Rose Bay",
     },
+    images: [
+      { src: "/images/before-after/Before%20and%20After%20Gutters%20%282%29.png", alt: "Before and after gutter cleaning on a Sydney Eastern Suburbs property" },
+    ],
   },
   {
     slug: "pressure-washing",
@@ -165,6 +186,7 @@ export const services: ServiceData[] = [
       name: "Michael K.",
       suburb: "Paddington",
     },
+    videos: ["/images/videos/Video%20-%20Time%20lapse%20pressure%20clean.mp4"],
   },
 ];
 
