@@ -41,7 +41,7 @@ export default function SiteFooter() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
               </svg>
-              Sydney&apos;s Eastern Suburbs, NSW
+              Sydney&apos;s Eastern Suburbs, NSW 2000
             </li>
           </ul>
         </div>
@@ -67,7 +67,7 @@ export default function SiteFooter() {
 
       <div className="max-w-6xl mx-auto border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 font-sans text-xs text-gray-600">
         <span>© {new Date().getFullYear()} Rivergum Services. All rights reserved.</span>
-        <span>Sydney&apos;s Eastern Suburbs, NSW</span>
+        <span>Sydney&apos;s Eastern Suburbs, NSW 2000</span>
       </div>
     </footer>
   );

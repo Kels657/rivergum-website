@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "Window & Exterior Cleaning Eastern Suburbs Sydney | Rivergum Services",
   description:
     "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing across Sydney's Eastern Suburbs. Rivergum Services — fully insured, locally owned. Get a free quote today.",
+  verification: {
+    google: "cu4H9gaZXcZ-Vf76cqVwuJeFqu2ElvbmnoK4COrJatQ",
+  },
 };
 
 const jsonLd = {
@@ -35,6 +38,7 @@ const jsonLd = {
     "@type": "PostalAddress",
     addressLocality: "Eastern Suburbs",
     addressRegion: "NSW",
+    postalCode: "2000",
     addressCountry: "AU",
   },
   areaServed: [
