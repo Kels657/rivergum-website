@@ -114,6 +114,13 @@ export default function MobileMenu() {
             </div>
 
             <a
+              href="/faq"
+              className="block py-2.5 hover:text-[#1b1b1b] transition-colors"
+              onClick={close}
+            >
+              FAQ
+            </a>
+            <a
               href="/#contact"
               className="block py-2.5 hover:text-[#1b1b1b] transition-colors"
               onClick={close}
