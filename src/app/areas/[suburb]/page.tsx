@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import JobberForm from "@/components/JobberForm";
-import { areas, getArea, getNeighbors } from "@/lib/areaData";
+import { areas, getArea, getNeighbors, regionLabels } from "@/lib/areaData";
 import { services } from "@/lib/serviceData";
 
 export async function generateStaticParams() {
@@ -72,7 +72,7 @@ export default async function AreaPage({
           <div className="flex items-center gap-4 mb-8">
             <span className="block w-8 h-px bg-[#8da59b]" />
             <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
-              Eastern Suburbs Sydney
+              {regionLabels[area.region] ?? "Sydney"}
             </span>
           </div>
 

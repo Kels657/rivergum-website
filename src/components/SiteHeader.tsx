@@ -1,4 +1,4 @@
-import { areas } from "@/lib/areaData";
+import { regions, regionLabels, getAreasByRegion } from "@/lib/areaData";
 import MobileMenu from "@/components/MobileMenu";
 
 export default function SiteHeader() {
@@ -14,7 +14,7 @@ export default function SiteHeader() {
         <nav className="hidden md:flex items-center gap-8 font-sans text-sm text-[#1b1b1b]/75 tracking-wide" aria-label="Main navigation">
           <a href="/#services" className="hover:text-[#1b1b1b] transition-colors">Services</a>
 
-          {/* Areas dropdown */}
+          {/* Areas mega-menu */}
           <div className="group relative">
             <button className="flex items-center gap-1 hover:text-[#1b1b1b] transition-colors cursor-default select-none">
               Areas
@@ -23,17 +23,30 @@ export default function SiteHeader() {
               </svg>
             </button>
             <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <div className="bg-white border border-gray-200 shadow-lg py-4 px-5 w-64">
-                <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                  {areas.map((area) => (
-                    <a
-                      key={area.slug}
-                      href={`/areas/${area.slug}`}
-                      className="font-sans text-sm text-[#1b1b1b]/70 hover:text-[#8da59b] transition-colors whitespace-nowrap"
-                    >
-                      {area.name}
-                    </a>
-                  ))}
+              <div className="bg-white border border-gray-200 shadow-lg py-5 px-6 w-[680px]">
+                <div className="grid grid-cols-4 gap-x-6 gap-y-5">
+                  {regions.map((region) => {
+                    const regionAreas = getAreasByRegion(region);
+                    return (
+                      <div key={region}>
+                        <p className="font-sans text-[#8da59b] text-[10px] font-semibold uppercase tracking-[0.18em] mb-2">
+                          {regionLabels[region]}
+                        </p>
+                        <ul className="space-y-1.5">
+                          {regionAreas.map((area) => (
+                            <li key={area.slug}>
+                              <a
+                                href={`/areas/${area.slug}`}
+                                className="font-sans text-sm text-[#1b1b1b]/70 hover:text-[#8da59b] transition-colors whitespace-nowrap"
+                              >
+                                {area.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
