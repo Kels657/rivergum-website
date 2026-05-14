@@ -2,7 +2,38 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import JobberForm from "@/components/JobberForm";
-import { services, getService, suburbs } from "@/lib/serviceData";
+import { services, getService } from "@/lib/serviceData";
+
+const serviceAreaRegions = [
+  {
+    region: "Eastern Suburbs",
+    suburbs: ["Bondi", "Coogee", "Randwick", "Vaucluse", "Rose Bay", "Double Bay", "Surry Hills", "Paddington", "Woollahra", "Maroubra", "Bronte", "Tamarama", "Waverley", "Bellevue Hill"],
+  },
+  {
+    region: "Inner West",
+    suburbs: ["Marrickville", "Newtown", "Glebe", "Leichhardt", "Balmain", "Rozelle", "Annandale", "Petersham", "Stanmore", "Dulwich Hill", "Tempe"],
+  },
+  {
+    region: "Lower North Shore",
+    suburbs: ["North Sydney", "Kirribilli", "McMahons Point", "Neutral Bay", "Cremorne", "Mosman"],
+  },
+  {
+    region: "Northern Suburbs",
+    suburbs: ["Chatswood", "Willoughby", "Artarmon", "St Leonards", "Crows Nest", "Waverton"],
+  },
+  {
+    region: "Northern Beaches",
+    suburbs: ["Manly", "Fairlight", "Balgowlah", "Seaforth", "Clontarf"],
+  },
+  {
+    region: "Sutherland Shire",
+    suburbs: ["Sutherland", "Cronulla", "Miranda", "Caringbah", "Gymea", "Kirrawee"],
+  },
+  {
+    region: "Inner South",
+    suburbs: ["Erskineville", "Alexandria", "Waterloo", "Zetland", "Beaconsfield", "Mascot"],
+  },
+];
 
 export async function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -199,17 +230,26 @@ export default async function ServicePage({
               Suburbs We Service
             </h2>
             <p className="font-sans text-gray-500 text-sm font-light mt-2">
-              Based in Sydney&apos;s Eastern Suburbs — we&apos;re right around the corner.
+              We work across greater Sydney — here&apos;s where you&apos;ll find us.
             </p>
           </div>
-          <div className="flex flex-wrap gap-2.5">
-            {suburbs.map((suburb) => (
-              <span
-                key={suburb}
-                className="bg-[#8da59b]/15 text-[#1b1b1b] border border-[#8da59b]/30 px-5 py-2 rounded-full font-sans text-sm font-medium tracking-wide"
-              >
-                {suburb}
-              </span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {serviceAreaRegions.map(({ region, suburbs: regionSuburbs }) => (
+              <div key={region}>
+                <p className="font-sans text-[#8da59b] text-xs font-semibold uppercase tracking-[0.2em] mb-3">
+                  {region}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {regionSuburbs.map((suburb) => (
+                    <span
+                      key={suburb}
+                      className="bg-[#8da59b]/15 text-[#1b1b1b] border border-[#8da59b]/30 px-4 py-1.5 rounded-full font-sans text-sm font-medium tracking-wide"
+                    >
+                      {suburb}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

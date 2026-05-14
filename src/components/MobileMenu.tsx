@@ -121,6 +121,13 @@ export default function MobileMenu() {
               FAQ
             </a>
             <a
+              href="/blog"
+              className="block py-2.5 hover:text-[#1b1b1b] transition-colors"
+              onClick={close}
+            >
+              Blog
+            </a>
+            <a
               href="/estimator"
               className="block py-2.5 hover:text-[#1b1b1b] transition-colors"
               onClick={close}

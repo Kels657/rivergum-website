@@ -369,13 +369,20 @@ export default function Home() {
 
       {/* ── Video Banner ── */}
       <section className="relative overflow-hidden h-72 sm:h-80 md:h-[420px]">
+        {/* Mobile: static background image */}
+        <div
+          aria-hidden="true"
+          className="md:hidden absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/before-after/Before%20and%20After%205.png')" }}
+        />
+        {/* Desktop: autoplay video */}
         <video
           autoPlay
           muted
           loop
           playsInline
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="hidden md:block absolute inset-0 w-full h-full object-cover"
         >
           <source src="/images/videos/Video%20-%20Satisfying%20Clean%20%28music%29.mp4" type="video/mp4" />
         </video>
@@ -384,7 +391,7 @@ export default function Home() {
           <div>
             <span aria-hidden="true" className="block w-8 h-px bg-[#c9a35b] mx-auto mb-6" />
             <h2 className="font-serif font-light text-white text-3xl md:text-5xl leading-tight max-w-2xl">
-              Trusted by homeowners across Sydney&apos;s Eastern Suburbs
+              Trusted by homeowners across Sydney
             </h2>
           </div>
         </div>

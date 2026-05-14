@@ -403,4 +403,42 @@
     <priority>0.7</priority>
   </url>
 
+
+  <url>
+    <loc>https://rivergumservices.com.au/blog</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/blog/how-often-should-you-clean-your-windows-sydney</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/blog/do-dirty-solar-panels-really-affect-performance</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/blog/how-to-choose-a-window-cleaner-in-sydney</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/blog/hidden-costs-of-blocked-gutters</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/blog/why-eastern-suburbs-homes-need-regular-window-cleaning</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
