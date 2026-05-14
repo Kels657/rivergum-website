@@ -111,10 +111,10 @@ const testimonials = [
 ];
 
 const galleryImages = [
-  { src: "/images/before-after/Before%20and%20After%205.png", alt: "Before and after window cleaning in Sydney's Eastern Suburbs" },
-  { src: "/images/before-after/Before%20and%20After%206.png", alt: "Before and after exterior surface cleaning Eastern Suburbs" },
-  { src: "/images/before-after/Before%20and%20After%202.png", alt: "Before and after professional window cleaning result" },
-  { src: "/images/before-after/Before%20and%20After%201.png", alt: "Before and after residential window cleaning" },
+  { src: "/images/before-after/Before and After 5.png", alt: "Before and after window cleaning in Sydney's Eastern Suburbs" },
+  { src: "/images/before-after/Before and After 6.png", alt: "Before and after exterior surface cleaning Eastern Suburbs" },
+  { src: "/images/before-after/Before and After 2.png", alt: "Before and after professional window cleaning result" },
+  { src: "/images/before-after/Before and After 1.png", alt: "Before and after residential window cleaning" },
 ];
 
 export default function Home() {
@@ -401,15 +401,15 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {galleryImages.map((img) => (
-              <div key={img.src} className="relative aspect-video overflow-hidden">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                />
-              </div>
+              <Image
+                key={img.src}
+                src={img.src}
+                alt={img.alt}
+                width={1200}
+                height={800}
+                style={{ width: "100%", height: "auto" }}
+                className="block"
+              />
             ))}
           </div>
         </div>
