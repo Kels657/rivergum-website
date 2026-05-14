@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Estimator from "@/components/Estimator";
 
 export const metadata: Metadata = {
-  title: "Job Cost Estimator | Rivergum Services Sydney",
+  title: "Window Cleaning Price Estimator Sydney | Rivergum Services",
   description:
-    "Get an instant price estimate for window cleaning, solar panel cleaning, gutter cleaning and pressure washing. Answer a few quick questions and see a tailored estimate in seconds.",
+    "Wondering how much window cleaning, gutter cleaning or solar panel cleaning costs in Sydney? Use our free instant price estimator and get a ballpark quote in under 2 minutes.",
   alternates: { canonical: "/estimator" },
 };
 

@@ -247,6 +247,26 @@ export default async function ServicePage({
         </div>
       </section>
 
+      {/* ── Estimator callout ── */}
+      <section className="py-12 px-6 bg-[#c9a35b]">
+        <div className="max-w-5xl mx-auto sm:flex sm:items-center sm:justify-between sm:gap-12">
+          <div className="mb-6 sm:mb-0">
+            <p className="font-serif font-light text-[#1b1b1b] text-xl md:text-2xl leading-snug">
+              Wondering about the cost?
+            </p>
+            <p className="font-sans text-[#1b1b1b]/70 text-sm font-light mt-1 leading-relaxed">
+              Try our free instant price estimator and get a ballpark figure in under 2 minutes.
+            </p>
+          </div>
+          <a
+            href="/estimator"
+            className="flex-shrink-0 inline-block bg-[#1b1b1b] text-white font-sans font-medium text-sm px-8 py-3.5 hover:bg-[#1b1b1b]/80 transition-colors tracking-wide whitespace-nowrap"
+          >
+            Try the Estimator →
+          </a>
+        </div>
+      </section>
+
       {/* ── Quote Form ── */}
       <JobberForm />
 

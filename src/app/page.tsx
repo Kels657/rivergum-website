@@ -238,6 +238,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Estimator CTA ── */}
+      <section className="py-20 px-6 bg-[#8da59b]">
+        <div className="max-w-5xl mx-auto md:flex md:items-center md:justify-between md:gap-12">
+          <div className="mb-8 md:mb-0">
+            <h2 className="font-serif font-light text-white text-3xl md:text-4xl mb-3 leading-tight">
+              Wondering What It Might Cost?
+            </h2>
+            <p className="font-sans text-white/80 font-light max-w-lg leading-relaxed">
+              Use our free instant estimator to get a price range for your job in under 2 minutes. No obligation, no phone call needed.
+            </p>
+          </div>
+          <a
+            href="/estimator"
+            className="flex-shrink-0 inline-block bg-white text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-white/90 transition-colors tracking-wide whitespace-nowrap"
+          >
+            Try the Free Estimator →
+          </a>
+        </div>
+      </section>
+
       {/* ── Why Choose Us ── */}
       <section className="py-24 px-6 bg-[#fafafa]">
         <div className="max-w-6xl mx-auto">
