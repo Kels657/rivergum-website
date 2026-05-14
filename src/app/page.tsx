@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import JobberForm from "@/components/JobberForm";
 import ElfsightReviews from "@/components/ElfsightReviews";
-import { suburbs } from "@/lib/serviceData";
+
 
 export const metadata: Metadata = {
   title: "Window & Exterior Cleaning Eastern Suburbs Sydney | Rivergum Services",
@@ -306,20 +306,58 @@ export default function Home() {
               Suburbs We Service
             </h2>
             <p className="font-sans text-gray-500 text-base max-w-md font-light leading-relaxed">
-              Based in Sydney&apos;s Eastern Suburbs — we&apos;re right around the corner.
+              We work across greater Sydney — here&apos;s where you&apos;ll find us.
             </p>
           </div>
-          <div className="flex flex-wrap gap-2.5">
-            {suburbs.map((suburb) => (
-              <span
-                key={suburb}
-                className="bg-[#8da59b]/15 text-[#1b1b1b] border border-[#8da59b]/30 px-5 py-2 rounded-full font-sans text-sm font-medium tracking-wide hover:bg-[#8da59b]/25 transition-colors"
-              >
-                {suburb}
-              </span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {[
+              {
+                region: "Eastern Suburbs",
+                suburbs: ["Bondi", "Coogee", "Randwick", "Vaucluse", "Rose Bay", "Double Bay", "Surry Hills", "Paddington", "Woollahra", "Maroubra", "Bronte", "Tamarama", "Waverley", "Bellevue Hill"],
+              },
+              {
+                region: "Inner West",
+                suburbs: ["Marrickville", "Newtown", "Glebe", "Leichhardt", "Balmain", "Rozelle", "Annandale", "Petersham", "Stanmore", "Dulwich Hill", "Tempe"],
+              },
+              {
+                region: "Lower North Shore",
+                suburbs: ["North Sydney", "Kirribilli", "McMahons Point", "Neutral Bay", "Cremorne", "Mosman"],
+              },
+              {
+                region: "Northern Suburbs",
+                suburbs: ["Chatswood", "Willoughby", "Artarmon", "St Leonards", "Crows Nest", "Waverton"],
+              },
+              {
+                region: "Northern Beaches",
+                suburbs: ["Manly", "Fairlight", "Balgowlah", "Seaforth", "Clontarf"],
+              },
+              {
+                region: "Sutherland Shire",
+                suburbs: ["Sutherland", "Cronulla", "Miranda", "Caringbah", "Gymea", "Kirrawee"],
+              },
+              {
+                region: "Inner South",
+                suburbs: ["Erskineville", "Alexandria", "Waterloo", "Zetland", "Beaconsfield", "Mascot"],
+              },
+            ].map(({ region, suburbs }) => (
+              <div key={region}>
+                <p className="font-sans text-[#8da59b] text-xs font-semibold uppercase tracking-[0.2em] mb-3">
+                  {region}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {suburbs.map((suburb) => (
+                    <span
+                      key={suburb}
+                      className="bg-[#8da59b]/15 text-[#1b1b1b] border border-[#8da59b]/30 px-4 py-1.5 rounded-full font-sans text-sm font-medium tracking-wide"
+                    >
+                      {suburb}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
-          <p className="font-sans text-gray-400 text-sm mt-8">
+          <p className="font-sans text-gray-400 text-sm mt-10">
             Don&apos;t see your suburb?{" "}
             <a href="#contact" className="text-[#8da59b] underline underline-offset-2 hover:text-[#7d978d] transition-colors">
               Get in touch
