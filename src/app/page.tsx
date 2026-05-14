@@ -329,16 +329,10 @@ export default function Home() {
       {/* ── Reviews ── */}
       <section className="py-24 px-6 bg-[#fafafa]">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-14">
+          <div className="mb-10">
             <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
               Reviews
             </span>
-            <h2 className="font-serif font-light text-[#1b1b1b] text-4xl md:text-5xl mt-2 mb-3">
-              What Our Customers Say
-            </h2>
-            <p className="font-sans text-gray-500 text-base max-w-md font-light">
-              Don&apos;t just take our word for it.
-            </p>
           </div>
           <ElfsightReviews />
         </div>
