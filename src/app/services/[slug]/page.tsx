@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
-import QuoteForm from "@/components/QuoteForm";
+import JobberForm from "@/components/JobberForm";
 import { services, getService, suburbs } from "@/lib/serviceData";
 
 export async function generateStaticParams() {
@@ -248,7 +248,7 @@ export default async function ServicePage({
       </section>
 
       {/* ── Quote Form ── */}
-      <QuoteForm defaultService={service.name} />
+      <JobberForm />
 
     </main>
   );

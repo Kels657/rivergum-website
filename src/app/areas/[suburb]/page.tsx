@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import QuoteForm from "@/components/QuoteForm";
+import JobberForm from "@/components/JobberForm";
 import { areas, getArea, getNeighbors } from "@/lib/areaData";
 import { services } from "@/lib/serviceData";
 
@@ -194,7 +194,7 @@ export default async function AreaPage({
       )}
 
       {/* ── Quote Form ── */}
-      <QuoteForm />
+      <JobberForm />
 
     </main>
   );
