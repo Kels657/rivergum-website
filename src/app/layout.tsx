@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.rivergumservices.com.au"),
+  metadataBase: new URL("https://rivergumservices.com.au"),
   title: "Window & Exterior Cleaning Eastern Suburbs Sydney | Rivergum Services",
   description:
     "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing across Sydney's Eastern Suburbs. Rivergum Services — fully insured, locally owned. Get a free quote today.",
