@@ -53,6 +53,7 @@ export default function SiteHeader() {
           </div>
 
           <a href="/faq" className="hover:text-[#1b1b1b] transition-colors">FAQ</a>
+          <a href="/estimator" className="hover:text-[#1b1b1b] transition-colors">Estimate</a>
           <a href="/#contact" className="hover:text-[#1b1b1b] transition-colors">Contact</a>
         </nav>
 

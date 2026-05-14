@@ -125,12 +125,18 @@ export default function Home() {
               Professional, reliable, and fully insured. Trusted by homeowners and businesses
               across Bondi, Vaucluse, Rose Bay and beyond.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <a
                 href="#contact"
                 className="bg-[#c9a35b] text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-[#b8923f] transition-colors tracking-wide"
               >
                 Get a Free Quote
+              </a>
+              <a
+                href="/estimator"
+                className="bg-[#8da59b] text-[#1b1b1b] font-sans font-medium text-sm px-10 py-4 hover:bg-[#7d978d] transition-colors tracking-wide"
+              >
+                Get an Estimate
               </a>
               <a
                 href="#services"
