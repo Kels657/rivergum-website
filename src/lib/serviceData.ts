@@ -14,6 +14,10 @@ export type ServiceData = {
     name: string;
     suburb: string;
   };
+  multiStorey?: {
+    body: string;
+    points: string[];
+  };
   images?: { src: string; alt: string }[];
   videos?: string[];
 };
@@ -23,9 +27,9 @@ export const services: ServiceData[] = [
     slug: "window-cleaning",
     name: "Residential Window Cleaning",
     subtitle: "Streak-free windows for homes across Sydney's Eastern Suburbs.",
-    metaTitle: "Residential Window Cleaning Eastern Suburbs Sydney | Rivergum Services",
+    metaTitle: "Window Cleaning Sydney — Including Multi-Storey Properties | Rivergum Services",
     metaDescription:
-      "Professional home window cleaning across Bondi, Vaucluse, Rose Bay & the Eastern Suburbs. Streak-free results, fully insured. Book your free quote today.",
+      "Professional window cleaning for single, double and three storey properties across Sydney. Rivergum Services uses a water-fed pole system for safe, streak-free results. Get a free quote.",
     included: [
       "Interior and exterior glass cleaned to a streak-free finish",
       "Window frames, sills, and tracks wiped down",
@@ -39,6 +43,17 @@ export const services: ServiceData[] = [
       paragraphs: [
         "Natural light lifts the feel of any home — and clean windows let more of it in. Beyond aesthetics, salt air and coastal grime in the Eastern Suburbs etch into glass over time, causing permanent damage if left unchecked.",
         "Regular professional cleaning protects your investment, maintains your home's appeal, and ensures you always see the best of Sydney through clear glass.",
+      ],
+    },
+    multiStorey: {
+      body: "We clean windows on properties up to three storeys using a professional water-fed pole system — no ladders required on most jobs. The water-fed pole allows us to reach high windows safely from the ground, delivering a streak-free pure water clean without the risks associated with ladder work.",
+      points: [
+        "Single storey homes and apartments",
+        "Double storey homes and townhouses",
+        "Three storey properties and walk-up apartments",
+        "We do not offer abseiling or rope access — for buildings requiring this we can recommend specialists",
+        "The water-fed pole system means faster, safer cleaning with no risk of ladder damage to your property",
+        "Pure water leaves no residue or streaking on high windows",
       ],
     },
     testimonial: {

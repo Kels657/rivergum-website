@@ -220,7 +220,7 @@ export const areas: AreaData[] = [
       "Professional window cleaning, gutter cleaning & pressure washing in Balmain. Inner West Sydney — locally owned & fully insured. Free quote.",
     intro:
       "Balmain's historic waterfront village, sandstone cottages, and elevated harbour views are some of Sydney's most distinctive. Rivergum Services provides professional exterior cleaning across Balmain's heritage properties, ensuring windows, gutters, and facades stay pristine.",
-    neighbors: ["rozelle", "annandale"],
+    neighbors: ["rozelle", "annandale", "balmain-east", "lilyfield"],
   },
   {
     slug: "rozelle",
@@ -242,7 +242,7 @@ export const areas: AreaData[] = [
       "Professional window cleaning, gutter cleaning & pressure washing in Glebe. Inner West Sydney — locally owned & fully insured. Free quote.",
     intro:
       "Glebe's heritage terrace homes, university precinct, and vibrant Saturday market draw a community that takes pride in its properties. Rivergum Services delivers professional window cleaning, gutter maintenance, and exterior washing throughout Glebe.",
-    neighbors: ["newtown", "leichhardt", "rozelle"],
+    neighbors: ["newtown", "leichhardt", "rozelle", "forest-lodge"],
   },
   {
     slug: "annandale",
@@ -299,6 +299,39 @@ export const areas: AreaData[] = [
       "Stanmore's quiet Federation streetscapes and well-kept homes sit at the heart of the Inner West. Rivergum Services delivers professional window cleaning, gutter maintenance, and pressure washing to Stanmore residents and small businesses.",
     neighbors: ["newtown", "petersham", "dulwich-hill", "summer-hill"],
   },
+  {
+    slug: "forest-lodge",
+    name: "Forest Lodge",
+    region: "inner-west",
+    metaTitle: "Window Cleaning Forest Lodge | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, gutter cleaning & pressure washing in Forest Lodge. Inner West Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Forest Lodge is a quiet residential enclave nestled between Glebe and Annandale, with heritage terraces and tree-lined streets that reward regular exterior care. Rivergum Services provides professional window cleaning, gutter maintenance, and pressure washing to Forest Lodge homes and surrounding areas across greater Sydney.",
+    neighbors: ["glebe", "annandale", "leichhardt", "rozelle"],
+  },
+  {
+    slug: "balmain-east",
+    name: "Balmain East",
+    region: "inner-west",
+    metaTitle: "Window Cleaning Balmain East | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, gutter cleaning & pressure washing in Balmain East. Inner West Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Balmain East's peninsular position offers stunning harbour views from some of the Inner West's most distinguished homes. Rivergum Services delivers professional window cleaning, gutter clearing, and exterior washing to Balmain East's harbour-facing properties and surrounding areas.",
+    neighbors: ["balmain", "rozelle", "lilyfield"],
+  },
+  {
+    slug: "lilyfield",
+    name: "Lilyfield",
+    region: "inner-west",
+    metaTitle: "Window Cleaning Lilyfield | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, gutter cleaning & pressure washing in Lilyfield. Inner West Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Lilyfield's leafy residential streets and well-maintained homes sit at the heart of the Inner West, bordered by Leichhardt and Rozelle. Rivergum Services provides professional window cleaning, gutter maintenance, and pressure washing to Lilyfield properties across the suburb and surrounding areas.",
+    neighbors: ["leichhardt", "rozelle", "balmain", "annandale"],
+  },
 
   // ── Lower North Shore ──
   {
@@ -332,7 +365,7 @@ export const areas: AreaData[] = [
       "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Cremorne. Lower North Shore Sydney — locally owned & fully insured. Free quote.",
     intro:
       "Cremorne's leafy harbour-facing streets and well-maintained residential properties are a testament to the care its community takes. Rivergum Services delivers professional window cleaning, gutter clearing, and exterior washing to homes and apartments throughout Cremorne.",
-    neighbors: ["mosman", "neutral-bay", "kirribilli"],
+    neighbors: ["mosman", "neutral-bay", "kirribilli", "cremorne-point"],
   },
   {
     slug: "kirribilli",
@@ -389,6 +422,50 @@ export const areas: AreaData[] = [
       "Waverton's quiet leafy streets, heritage homes, and strong community spirit make it a gem on the Lower North Shore. Rivergum Services delivers professional window cleaning, gutter maintenance, and pressure washing throughout Waverton's well-kept residential streets.",
     neighbors: ["mosman", "neutral-bay", "crows-nest"],
   },
+  {
+    slug: "wollstonecraft",
+    name: "Wollstonecraft",
+    region: "lower-north-shore",
+    metaTitle: "Window Cleaning Wollstonecraft | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Wollstonecraft. Lower North Shore Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Wollstonecraft's heritage apartments, terrace homes, and quiet streets sit conveniently between Crows Nest and the waterfront. Rivergum Services delivers professional window cleaning, gutter clearing, and exterior washing to Wollstonecraft's well-kept residential properties and surrounding areas.",
+    neighbors: ["crows-nest", "waverton", "cammeray", "neutral-bay"],
+  },
+  {
+    slug: "cammeray",
+    name: "Cammeray",
+    region: "lower-north-shore",
+    metaTitle: "Window Cleaning Cammeray | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Cammeray. Lower North Shore Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Cammeray's village atmosphere, established homes, and proximity to Neutral Bay make it one of the Lower North Shore's most appealing suburbs. Rivergum Services provides professional window cleaning, solar panel care, and pressure washing to Cammeray properties across the suburb and surrounding areas.",
+    neighbors: ["neutral-bay", "crows-nest", "wollstonecraft", "mosman"],
+  },
+  {
+    slug: "cremorne-point",
+    name: "Cremorne Point",
+    region: "lower-north-shore",
+    metaTitle: "Window Cleaning Cremorne Point | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Cremorne Point. Lower North Shore Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Cremorne Point's exclusive harbourfront peninsula offers spectacular views of Sydney Harbour from some of Sydney's most coveted addresses. Rivergum Services delivers professional window cleaning, gutter clearing, and exterior washing to Cremorne Point's prestigious waterfront properties.",
+    neighbors: ["cremorne", "mosman", "neutral-bay"],
+  },
+  {
+    slug: "greenwich",
+    name: "Greenwich",
+    region: "lower-north-shore",
+    metaTitle: "Window Cleaning Greenwich | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Greenwich. Lower North Shore Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Greenwich's waterfront homes, heritage properties, and quiet streets along the Lane Cove River are among the Lower North Shore's best-kept secrets. Rivergum Services provides professional window cleaning, gutter maintenance, and pressure washing to Greenwich's distinguished homes and surrounding areas across greater Sydney.",
+    neighbors: ["lane-cove", "northwood", "wollstonecraft", "waverton"],
+  },
 
   // ── Northern Suburbs ──
   {
@@ -411,7 +488,7 @@ export const areas: AreaData[] = [
       "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Lane Cove. Northern Suburbs Sydney — locally owned & fully insured. Free quote.",
     intro:
       "Lane Cove's riverside setting, leafy streets, and family-friendly community make it one of Sydney's most liveable northern suburbs. Rivergum Services delivers professional window cleaning, gutter clearing, and pressure washing to Lane Cove homes.",
-    neighbors: ["chatswood", "willoughby", "artarmon"],
+    neighbors: ["chatswood", "willoughby", "artarmon", "lane-cove-west"],
   },
   {
     slug: "willoughby",
@@ -456,6 +533,50 @@ export const areas: AreaData[] = [
     intro:
       "Crows Nest's village feel, popular café culture, and mix of apartments and houses make it one of Sydney's most desirable northern addresses. Rivergum Services delivers professional window cleaning, gutter clearing, and pressure washing throughout Crows Nest.",
     neighbors: ["st-leonards", "artarmon", "willoughby", "neutral-bay"],
+  },
+  {
+    slug: "lane-cove-west",
+    name: "Lane Cove West",
+    region: "northern-suburbs",
+    metaTitle: "Window Cleaning Lane Cove West | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Lane Cove West. Northern Suburbs Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Lane Cove West's quiet streets, generous blocks, and well-established homes make it a peaceful corner of Sydney's North Shore. Rivergum Services delivers professional window cleaning, gutter clearing, and exterior washing to Lane Cove West homes and surrounding areas.",
+    neighbors: ["lane-cove", "longueville", "northwood", "riverview"],
+  },
+  {
+    slug: "longueville",
+    name: "Longueville",
+    region: "northern-suburbs",
+    metaTitle: "Window Cleaning Longueville | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Longueville. Northern Suburbs Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Longueville's prestigious waterfront homes and leafy streets along the Lane Cove River are among the North Shore's finest. Rivergum Services provides professional window cleaning, solar panel care, and exterior washing to Longueville's elegant harbourside properties and surrounding areas.",
+    neighbors: ["lane-cove", "lane-cove-west", "northwood", "riverview"],
+  },
+  {
+    slug: "northwood",
+    name: "Northwood",
+    region: "northern-suburbs",
+    metaTitle: "Window Cleaning Northwood | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Northwood. Northern Suburbs Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Northwood's secluded harbourfront homes and quiet residential streets offer exclusive living on Sydney's North Shore. Rivergum Services delivers professional window cleaning, gutter clearing, and pressure washing to Northwood's well-maintained properties along the Lane Cove River.",
+    neighbors: ["lane-cove", "lane-cove-west", "longueville", "greenwich"],
+  },
+  {
+    slug: "riverview",
+    name: "Riverview",
+    region: "northern-suburbs",
+    metaTitle: "Window Cleaning Riverview | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, solar panel cleaning, gutter cleaning & pressure washing in Riverview. Northern Suburbs Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Riverview's serene bushland setting and prestigious homes along the Lane Cove River create a distinctive residential character on Sydney's North Shore. Rivergum Services provides professional window cleaning and exterior washing to Riverview's sought-after properties and surrounding areas.",
+    neighbors: ["lane-cove", "longueville", "lane-cove-west", "northwood"],
   },
 
   // ── Northern Beaches ──
@@ -649,6 +770,39 @@ export const areas: AreaData[] = [
     intro:
       "Beaconsfield's quiet residential streets, surrounded by Alexandria, Waterloo, and Erskineville, offer a calm pocket within Sydney's busy inner south. Rivergum Services provides professional window cleaning, gutter maintenance, and pressure washing to Beaconsfield homes.",
     neighbors: ["waterloo", "zetland", "erskineville", "alexandria"],
+  },
+  {
+    slug: "chippendale",
+    name: "Chippendale",
+    region: "inner-south",
+    metaTitle: "Window Cleaning Chippendale | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, gutter cleaning & pressure washing in Chippendale. Inner South Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Chippendale's mix of heritage terraces, converted warehouse apartments, and university precincts creates diverse exterior cleaning needs just minutes from the CBD. Rivergum Services provides professional window cleaning, gutter clearing, and pressure washing for Chippendale's residential and commercial properties.",
+    neighbors: ["redfern", "newtown", "ultimo", "glebe"],
+  },
+  {
+    slug: "ultimo",
+    name: "Ultimo",
+    region: "inner-south",
+    metaTitle: "Window Cleaning Ultimo | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, gutter cleaning & pressure washing in Ultimo. Inner South Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Ultimo's dense inner-city character — from student accommodation near UTS to heritage warehouses and the Powerhouse Museum precinct — creates diverse exterior cleaning demands. Rivergum Services delivers professional window cleaning and exterior washing to Ultimo properties and surrounding areas.",
+    neighbors: ["glebe", "pyrmont", "chippendale"],
+  },
+  {
+    slug: "pyrmont",
+    name: "Pyrmont",
+    region: "inner-south",
+    metaTitle: "Window Cleaning Pyrmont | Rivergum Services Sydney",
+    metaDescription:
+      "Professional window cleaning, gutter cleaning & pressure washing in Pyrmont. Inner South Sydney — locally owned & fully insured. Free quote.",
+    intro:
+      "Pyrmont's dramatic transformation from industrial peninsula to vibrant urban village has produced thousands of waterfront apartments and businesses with spectacular city and harbour views. Rivergum Services provides professional window cleaning, gutter maintenance, and pressure washing to Pyrmont's residential and commercial properties.",
+    neighbors: ["glebe", "ultimo", "forest-lodge"],
   },
 ];
 

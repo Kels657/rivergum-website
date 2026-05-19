@@ -148,6 +148,24 @@
 
   <!-- Inner West -->
   <url>
+    <loc>https://rivergumservices.com.au/areas/forest-lodge</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/balmain-east</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/lilyfield</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://rivergumservices.com.au/areas/newtown</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -216,6 +234,30 @@
 
   <!-- Lower North Shore -->
   <url>
+    <loc>https://rivergumservices.com.au/areas/wollstonecraft</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/cammeray</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/cremorne-point</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/greenwich</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://rivergumservices.com.au/areas/mosman</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -265,6 +307,30 @@
   </url>
 
   <!-- Northern Suburbs -->
+  <url>
+    <loc>https://rivergumservices.com.au/areas/lane-cove-west</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/longueville</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/northwood</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/riverview</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://rivergumservices.com.au/areas/chatswood</loc>
     <lastmod>2026-05-14</lastmod>
@@ -373,6 +439,24 @@
   </url>
 
   <!-- Inner South -->
+  <url>
+    <loc>https://rivergumservices.com.au/areas/chippendale</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/ultimo</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivergumservices.com.au/areas/pyrmont</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://rivergumservices.com.au/areas/alexandria</loc>
     <lastmod>2026-05-14</lastmod>

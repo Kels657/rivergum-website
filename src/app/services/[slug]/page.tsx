@@ -159,6 +159,42 @@ export default async function ServicePage({
         </div>
       </section>
 
+      {/* ── Multi-Storey ── */}
+      {service.multiStorey && (
+        <section className="py-20 px-6 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10">
+              <span className="font-sans text-[#8da59b] text-xs font-medium uppercase tracking-[0.22em]">
+                Multi-Storey Capability
+              </span>
+              <h2 className="font-serif font-light text-[#1b1b1b] text-3xl md:text-4xl mt-2">
+                Multi-Storey Window Cleaning
+              </h2>
+            </div>
+            <p className="font-sans text-gray-600 text-base leading-relaxed font-light max-w-3xl mb-10">
+              {service.multiStorey.body}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-5">
+              {service.multiStorey.points.map((point) => (
+                <div key={point} className="flex items-start gap-4">
+                  <svg
+                    aria-hidden="true"
+                    className="w-4 h-4 text-[#c9a35b] flex-shrink-0 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-sans text-[#1b1b1b] text-sm leading-relaxed">{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ── Before & After ── */}
       {service.images && service.images.length > 0 && (
         <section className="py-20 px-6 bg-white">
