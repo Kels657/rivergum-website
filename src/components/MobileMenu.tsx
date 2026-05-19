@@ -128,6 +128,13 @@ export default function MobileMenu() {
               Blog
             </a>
             <a
+              href="/about"
+              className="block py-2.5 hover:text-[#1b1b1b] transition-colors"
+              onClick={close}
+            >
+              About
+            </a>
+            <a
               href="/estimator"
               className="block py-2.5 hover:text-[#1b1b1b] transition-colors"
               onClick={close}
