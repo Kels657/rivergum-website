@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Estimator from "@/components/Estimator";
+import ServiceM8Button from "@/components/ServiceM8Button";
 
 export const metadata: Metadata = {
   title: "Window Cleaning Price Estimator Sydney | Rivergum Services",
@@ -33,6 +34,9 @@ export default function EstimatorPage() {
       <section className="py-20 px-6 bg-white">
         <Estimator />
       </section>
+
+      {/* ── Quote Form ── */}
+      <ServiceM8Button />
     </main>
   );
 }

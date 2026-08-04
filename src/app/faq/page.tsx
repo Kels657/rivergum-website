@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import JobberForm from "@/components/JobberForm";
+import ServiceM8Button from "@/components/ServiceM8Button";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | Rivergum Services Sydney",
@@ -190,7 +190,7 @@ export default function FaqPage() {
       </section>
 
       {/* ── Quote Form ── */}
-      <JobberForm />
+      <ServiceM8Button />
     </main>
   );
 }

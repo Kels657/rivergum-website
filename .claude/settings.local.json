@@ -9,7 +9,8 @@
       "Bash(Get-ChildItem -Recurse public/images)",
       "Bash(Select-Object FullName, Length)",
       "Bash(Format-Table -AutoSize)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(Remove-Item *)"
     ]
   }
 }

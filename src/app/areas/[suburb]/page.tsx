@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import JobberForm from "@/components/JobberForm";
+import ServiceM8Button from "@/components/ServiceM8Button";
 import { areas, getArea, getNeighbors, regionLabels } from "@/lib/areaData";
 import { services } from "@/lib/serviceData";
 
@@ -194,7 +194,7 @@ export default async function AreaPage({
       )}
 
       {/* ── Quote Form ── */}
-      <JobberForm />
+      <ServiceM8Button />
 
     </main>
   );

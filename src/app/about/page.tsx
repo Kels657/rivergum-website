@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import JobberForm from "@/components/JobberForm";
+import ServiceM8Button from "@/components/ServiceM8Button";
 
 export const metadata: Metadata = {
   title: "About Rivergum Services | Aidan Kelso, Sydney Window Cleaner",
@@ -260,7 +260,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Contact Form ── */}
-      <JobberForm />
+      <ServiceM8Button />
 
     </main>
   );

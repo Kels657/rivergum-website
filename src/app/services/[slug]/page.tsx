@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
-import JobberForm from "@/components/JobberForm";
+import ServiceM8Button from "@/components/ServiceM8Button";
 import { services, getService } from "@/lib/serviceData";
 
 const serviceAreaRegions = [
@@ -344,7 +344,7 @@ export default async function ServicePage({
       </section>
 
       {/* ── Quote Form ── */}
-      <JobberForm />
+      <ServiceM8Button />
 
     </main>
   );
