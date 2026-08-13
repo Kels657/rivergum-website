@@ -66,7 +66,13 @@ export default function SiteFooter() {
       </div>
 
       <div className="max-w-6xl mx-auto border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 font-sans text-xs text-gray-600">
-        <span>© {new Date().getFullYear()} Rivergum Services. All rights reserved.</span>
+        <span className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+          <span>© {new Date().getFullYear()} Rivergum Services. All rights reserved.</span>
+          <span aria-hidden="true">·</span>
+          <a href="/privacy-policy" className="hover:text-white transition-colors">
+            Privacy Policy
+          </a>
+        </span>
         <span>Sydney&apos;s Eastern Suburbs, NSW 2000</span>
       </div>
     </footer>
