@@ -166,15 +166,17 @@ export default function Home() {
           </div>
 
           {/* Image column */}
-          <div className="relative h-72 sm:h-96 lg:h-auto">
-            <Image
-              src="/images/videos/Water%20Fed%20Clean%20External%20-%20long.jpg"
-              alt="Rivergum Services technician using a water-fed pole to clean windows on a Sydney Eastern Suburbs property"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="relative flex items-center justify-center py-10 lg:py-16">
+            <div className="relative w-full max-w-sm sm:max-w-md aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/work/aidan-kelso-rivergum.jpg"
+                alt="Aidan Kelso, owner of Rivergum Services Sydney"
+                fill
+                preload
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
 
         </div>
@@ -245,8 +247,16 @@ export default function Home() {
       </section>
 
       {/* ── Estimator CTA ── */}
-      <section className="py-20 px-6 bg-[#8da59b]">
-        <div className="max-w-5xl mx-auto md:flex md:items-center md:justify-between md:gap-12">
+      <section className="relative overflow-hidden py-20 px-6">
+        <Image
+          src="/images/videos/Water%20Fed%20Clean%20External%20-%20long.jpg"
+          alt="Rivergum Services technician using a water-fed pole to clean windows on a Sydney Eastern Suburbs property"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div aria-hidden="true" className="absolute inset-0 bg-[#8da59b]/90" />
+        <div className="relative z-10 max-w-5xl mx-auto md:flex md:items-center md:justify-between md:gap-12">
           <div className="mb-8 md:mb-0">
             <h2 className="font-serif font-light text-white text-3xl md:text-4xl mb-3 leading-tight">
               Wondering What It Might Cost?

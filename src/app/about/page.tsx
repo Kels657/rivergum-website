@@ -69,15 +69,17 @@ export default function AboutPage() {
           </div>
 
           {/* Image column */}
-          <div className="relative h-72 sm:h-96 lg:h-auto">
-            <Image
-              src="/images/videos/Water%20Fed%20Clean%20External%20-%20long.jpg"
-              alt="Aidan from Rivergum Services cleaning windows on a Sydney Eastern Suburbs property with a water-fed pole"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="relative flex items-center justify-center py-10 lg:py-16">
+            <div className="relative w-full max-w-sm sm:max-w-md aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/work/aidan-kelso-rivergum.jpg"
+                alt="Aidan Kelso, owner of Rivergum Services Sydney"
+                fill
+                preload
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
 
         </div>
@@ -95,6 +97,15 @@ export default function AboutPage() {
             <h2 className="font-serif font-light text-[#1b1b1b] text-3xl md:text-4xl mt-2 leading-tight">
               From Orange<br />to the Ocean
             </h2>
+            <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden shadow-lg mt-8">
+              <Image
+                src="/images/work/aidan-kelso-rivergum.jpg"
+                alt="Aidan Kelso, owner of Rivergum Services Sydney"
+                fill
+                className="object-cover"
+                sizes="144px"
+              />
+            </div>
           </div>
 
           {/* Narrative column */}

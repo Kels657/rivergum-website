@@ -10,7 +10,19 @@
       "Bash(Select-Object FullName, Length)",
       "Bash(Format-Table -AutoSize)",
       "Bash(npx tsc *)",
-      "Bash(Remove-Item *)"
+      "Bash(Remove-Item *)",
+      "Bash(cd *)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\aidan\\\\Documents\\\\rivergum-website\\\\public\\\\images\\\\work\\\\aidan-kelso-rivergum.jpg\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "Bash(npx eslint *)",
+      "Bash(echo \"started with pid $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000 --max-time 5)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/about)",
+      "Bash(curl -s -o /dev/null -w \"headshot: %{http_code}\\\\n\" \"http://localhost:3000/_next/image?url=%2Fimages%2Fwork%2Faidan-kelso-rivergum.jpg&w=640&q=75\")",
+      "Bash(curl -s -o /dev/null -w \"waterpole: %{http_code}\\\\n\" \"http://localhost:3000/_next/image?url=%2Fimages%2Fvideos%2FWater%2520Fed%2520Clean%2520External%2520-%2520long.jpg&w=1920&q=75\")",
+      "Bash(powershell -Command \"Get-Process -Name node -ErrorAction SilentlyContinue | Stop-Process -Force\")"
     ]
   }
 }
